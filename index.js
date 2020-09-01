@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs")
 const generateMarkdown = require("./utils/generateMarkdown")
+const util = require("util");
+
 
 
 
@@ -16,26 +18,22 @@ const questions = [
         type: "input",
         name: "description",
         message: "Write a description",
-    }, {
-        type: "input",
-        name: "table of contents",
-        message: "What are the table of contents?",
     },
 
     {
         type: "input",
         name: "installation",
-        message: "How does the user install the application? Provide instructions here",
+        message: "How does the user install the application?",
     },
 
     {
         type: "input",
         name: "usage",
-        message: "How does a user use the application? Provide instructions here",
+        message: "How does the user use the application?",
     },
 
     {
-        type: "input",
+        type: "list",
         name: "license",
         message: "Which license are you using?",
         choices: [
@@ -58,12 +56,24 @@ const questions = [
         message: "Run tests here",
     },
 
+
     {
         type: "input",
-        name: "questions",
-        message: "Any questions?",
+        name: "githubName",
+        message: "What is your Github username?"
     },
+
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email?"
+    },
+
+
+
 ];
+
+
 
 
 // function to write README file
@@ -74,11 +84,14 @@ function writeToFile(fileName, data) {
 
         }
 
-        console.log("README was created");
+        console.log("README created!");
 
     });
 
 }
+
+
+
 
 
 
