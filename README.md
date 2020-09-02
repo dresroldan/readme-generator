@@ -8,7 +8,6 @@
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Test](#test)
-  - [Credits](#credits)
   - [License](#license)
   - [Questions](#questions)
   
@@ -17,6 +16,9 @@
   ![](assets/commandline.png)
   ![](assets/readmefrontpage.png)  
 
+  Here is a walk-through video that demonstrates the functionality of this application:
+  https://drive.google.com/file/d/1fhoqUNUSqsG9T5pBXYoc-WCrQZKTHLDd/view
+ 
  ## Installation:
   The user must instal Node.js and run npm install.
   ## Usage:

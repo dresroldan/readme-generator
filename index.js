@@ -3,9 +3,6 @@ const fs = require("fs")
 const generateMarkdown = require("./utils/generateMarkdown")
 const util = require("util");
 
-
-
-
 // array of questions for user
 const questions = [
 
@@ -69,11 +66,7 @@ const questions = [
         message: "What is your email?"
     },
 
-
-
 ];
-
-
 
 
 // function to write README file
@@ -89,10 +82,6 @@ function writeToFile(fileName, data) {
     });
 
 }
-
-
-
-
 
 
 // function to initialize program
